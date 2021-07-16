@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, TouchableOpacity, ScrollView, FlatList } from '
 import { Entypo, Feather } from '@expo/vector-icons'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
-export default function Home() {
+export default function Home(props) {
     const [copos, setCopos] = useState([300, 500, 2000, 1, 10, 224, 43, 23410, 22443, 4565, 123, 12345, 43234]);
     const [currentCopo, setCurrentCopo] = useState([300])
     return (
@@ -64,7 +64,6 @@ function Progress() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'flex-start',
     },
